@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNotes } from '../../context/notescontext';
-import Notebox from '../../components/notebox/notebox';
 
 const Trash: React.FC = () => {
   const { trash, loading, error, restoreFromTrash, permanentlyDeleteNote } = useNotes();
