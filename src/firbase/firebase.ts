@@ -8,13 +8,13 @@ import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCfcdSVTP7Mu7CAZlDAAe04glVvv9IAcgc",
-  authDomain: "nava-ed64b.firebaseapp.com",
-  projectId: "nava-ed64b",
-  storageBucket: "nava-ed64b.firebasestorage.app",
-  messagingSenderId: "19804904138",
-  appId: "1:19804904138:web:0452c21e699c117e7e3233",
-  measurementId: "G-27HCYV1M3N"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "AIzaSyCfcdSVTP7Mu7CAZlDAAe04glVvv9IAcgc",
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "nava-ed64b.firebaseapp.com",
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "nava-ed64b",
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "nava-ed64b.firebasestorage.app",
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "19804904138",
+  appId: import.meta.env.VITE_FIREBASE_APP_ID || "1:19804904138:web:0452c21e699c117e7e3233",
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID || "G-27HCYV1M3N"
 };
 
 // Initialize Firebase
