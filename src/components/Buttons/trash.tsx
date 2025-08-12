@@ -1,4 +1,5 @@
 import React from 'react';
+import TrashIcon from '../../assets/icons/Trash.png';
 
 interface TrashButtonProps{
     onClick?:() => void;
@@ -25,7 +26,7 @@ const TrashButton: React.FC<TrashButtonProps> = ({
                   focus:ring-blue-200 focus:ring-offset-2 disabled:opacity-50
                    disabled:cursor-not-allowed ${className}`}
                    >
-            <img src="/src/assets/icons/Trash.png" alt="favorites.png" />
+            <img src={TrashIcon} alt="Trash" />
             <span className = "Text-[#000000] text-2xl">Trash</span>
         </button>
     )

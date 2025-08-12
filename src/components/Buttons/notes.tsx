@@ -1,3 +1,4 @@
+import NotesIcon from '../../assets/icons/notes.png';
 interface NotesButtonProps {
   onClick?: () => void;
   className?: string;
@@ -27,7 +28,7 @@ const NotesButton: React.FC<NotesButtonProps> = ({
       `}
     >
       <img 
-        src="/src/assets/icons/notes.png" 
+        src={NotesIcon}
         alt="Notes"
         className="size-8"
       />

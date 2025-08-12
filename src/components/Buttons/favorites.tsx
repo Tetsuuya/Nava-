@@ -1,4 +1,5 @@
 import React from 'react';
+import FavoritesIcon from '../../assets/icons/favorites.png';
 
 interface FavoritesButtonProps{
     onClick?:() => void;
@@ -25,7 +26,7 @@ const FavoritesButton: React.FC<FavoritesButtonProps> = ({
                   focus:ring-blue-200 focus:ring-offset-2 disabled:opacity-50
                    disabled:cursor-not-allowed ${className}`}
                    >
-            <img src="/src/assets/icons/favorites.png" alt="favorites.png" />
+            <img src={FavoritesIcon} alt="Favorites" />
             <span className = "Text-[#000000] text-2xl">Favorites</span>
         </button>
     )

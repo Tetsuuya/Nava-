@@ -1,4 +1,6 @@
 import React from 'react';
+import EditIcon from '../../assets/icons/edit.png';
+import TrashIcon from '../../assets/icons/Trash.png';
 import type { Note } from '../../firbase/firestore';
 
 interface NoteboxProps {
@@ -66,14 +68,14 @@ const Notebox: React.FC<NoteboxProps> = ({ notes, onEdit, onDelete, onFavorite }
                   onClick={() => onEdit && onEdit(note)}
                   title="Edit"
                 >
-                  <img src="/src/assets/icons/edit.png" alt="Edit" className="w-4 h-4" />
+                  <img src={EditIcon} alt="Edit" className="w-4 h-4" />
                 </button>
                 <button
                   className="p-1 text-black rounded"
                   onClick={() => onDelete && onDelete(note)}
                   title="Delete"
                 >
-                  <img src="/src/assets/icons/Trash.png" alt="Delete" className="w-4 h-4" />
+                  <img src={TrashIcon} alt="Delete" className="w-4 h-4" />
                 </button>
               </div>
             </li>

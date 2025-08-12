@@ -1,4 +1,5 @@
 import React from 'react';
+import ScratchIcon from '../../assets/icons/Scratch.png';
 
 interface ScratchButtonProps{
     onClick?:() => void;
@@ -25,7 +26,7 @@ const ScratchButton: React.FC<ScratchButtonProps> = ({
                   focus:ring-blue-200 focus:ring-offset-2 disabled:opacity-50
                    disabled:cursor-not-allowed ${className}`}
         >
-            <img src="/src/assets/icons/Scratch.png" alt="Scratch" className="size-8"/>
+            <img src={ScratchIcon} alt="Scratch" className="size-8"/>
             <span className="Text-[000000] text-2xl">Scratchpad</span>
         </button>
     )

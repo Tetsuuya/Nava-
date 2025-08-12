@@ -1,4 +1,5 @@
 import React from 'react';
+import PlusButtonIcon from '../../assets/icons/Plusbutton.png';
 
 interface AddbuttonProps {
   onClick: () => void;
@@ -13,7 +14,7 @@ const Addbutton: React.FC<AddbuttonProps> = ({ onClick }) => {
                  active:bg-gray-300 focus:outline-none focus:ring-2
                   focus:ring-blue-200 focus:ring-offset-2 bg-[#D9D9D9]"
                    >
-            <img src="/src/assets/icons/plusbutton.png" alt="plusbutton.png" />
+            <img src={PlusButtonIcon} alt="Add" />
             <span className="Text-[#000000] text-2xl">Add Notes</span>
         </button>
     );
